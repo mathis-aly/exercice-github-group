@@ -146,3 +146,57 @@
   font-size: 0.85rem;
   color: #888;
 }
+
+/* Header ------------------------------*/
+.header {
+  background: linear-gradient(135deg, #1565c0, #0d3b82);
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.logo span {
+  color: #4fc3f7;
+}
+
+.nav a {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin: 0 16px;
+  padding: 4px 0;
+  transition: color 0.25s;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4fc3f7;
+  transition: width 0.25s;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
